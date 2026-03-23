@@ -1,0 +1,32 @@
+.toast {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.success {
+    background-color: #4BB543;
+}
+
+.error {
+    background-color: #FF0000;
+}
+
+.warning {
+    background-color: #FFA500;
+}
+
+.info {
+    background-color: #2196F3;
+}
+
+span {
+    cursor: pointer;
+    font-size: 24px;
+}

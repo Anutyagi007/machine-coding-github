@@ -1,8 +1,10 @@
-import React from 'react'
+import './Toast.css';
 
-const Toast = () => {
+const Toast = ({id, type, message}) => {
   return (
-    <div>Toast</div>
+    <div className={`toast ${type}`}>
+        <p>{message}</p>
+    </div>
   )
 }
 
