@@ -12,7 +12,7 @@ const ToastIndex = () => {
       message
     }
     setToasts ([...toasts, newToast]);
-    const timer = setTimeout(()=> {
+    setTimeout(()=> {
       setToasts((prevToasts) => prevToasts.filter((toast) => toast.id !== id));
     }, 3000) 
   }
@@ -29,7 +29,7 @@ const ToastIndex = () => {
       <button onClick={()=> handleClick('info', 'Info Alert Clicked')}>Info</button>
       {
         toasts.map((toast) => (
-          <div key={toast.id}>
+          <div className={`toast-container ${toast.type}`} key={toast.id}>
             <Toast type={toast.type} message={toast.message} />
             <span onClick={()=>handleDelete(toast.id)}>x</span>
           </div>

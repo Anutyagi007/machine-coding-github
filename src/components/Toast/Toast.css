@@ -1,13 +1,21 @@
-.toast {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.toast-container {
+    position: relative;
     width: 200px;
     height: 30px;
-    color: white;
+    display: flex;
+    justify-content: space-between;
     padding: 10px;
     border-radius: 5px;
     margin: 10px;
+    align-items: center;
+    color: white;
+}
+
+.toast {
+    display: flex;
+    align-items: center;
+    
 }
 
 .success {

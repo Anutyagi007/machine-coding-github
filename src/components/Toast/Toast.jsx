@@ -2,7 +2,7 @@ import './Toast.css';
 
 const Toast = ({id, type, message}) => {
   return (
-    <div className={`toast ${type}`}>
+    <div>
         <p>{message}</p>
     </div>
   )
