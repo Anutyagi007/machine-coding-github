@@ -2,6 +2,7 @@ import './App.css';
 import { useState } from 'react';
 import ToastIndex from './components/Toast/ToastIndex';
 import OTP from './components/OTP/OTP';
+import Stepper from './components/Stepper/Stepper';
 
 function App() {
   const components = [
@@ -14,6 +15,11 @@ function App() {
       key: 'otp',
       name: 'OTP Component',
       element: <OTP />
+    },
+    {
+      key: 'stepper',
+      name: 'Stepper Component',
+      element: <Stepper />
     }
   ];
 
