@@ -1,0 +1,10 @@
+.step_number {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.step_line {
+    border: 1px solid black;
+    width: 1px;
+    height: 20px;
+    background-color: black;
+}
