@@ -1,10 +1,37 @@
-.step_number {
-    border: 1px solid black;
-    border-radius: 50%;
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.step_line {
-    border: 1px solid black;
-    width: 1px;
-    height: 20px;
-    background-color: black;
+
+.stepper-container {
+  display: flex;
+  gap: 20px;
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: gray;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-number-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.step-line {
+  width: 2px;
+  height: 20px;
+  background-color: gray;
+}
+
+.active {
+    background-color: blue;
 }
