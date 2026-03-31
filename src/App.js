@@ -3,6 +3,7 @@ import { useState } from 'react';
 import ToastIndex from './components/Toast/ToastIndex';
 import OTP from './components/OTP/OTP';
 import Stepper from './components/Stepper/Stepper';
+import Pagination from './components/Pagination/Pagination';
 
 function App() {
   const components = [
@@ -20,6 +21,11 @@ function App() {
       key: 'stepper',
       name: 'Stepper Component',
       element: <Stepper />
+    },
+    {
+      key: 'pagination',
+      name: 'Pagination Component',
+      element: <Pagination/>
     }
   ];
 
