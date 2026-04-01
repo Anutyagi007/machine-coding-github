@@ -1,0 +1,57 @@
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.content-container button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: skyblue;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+.image-div {
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-div img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.nav-dot-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.nav-dots {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+}
+
+.nav-dots.active {
+    background-color: skyblue;
+}

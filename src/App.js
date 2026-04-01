@@ -4,6 +4,7 @@ import ToastIndex from './components/Toast/ToastIndex';
 import OTP from './components/OTP/OTP';
 import Stepper from './components/Stepper/Stepper';
 import Pagination from './components/Pagination/Pagination';
+import Carousel from './components/Carousel/Carousel';
 
 function App() {
   const components = [
@@ -26,6 +27,11 @@ function App() {
       key: 'pagination',
       name: 'Pagination Component',
       element: <Pagination/>
+    },
+    {
+      key: 'carousel',
+      name: 'Carousel Component',
+      element: <Carousel/>
     }
   ];
 
