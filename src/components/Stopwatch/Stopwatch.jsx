@@ -71,6 +71,12 @@ const Stopwatch = () => {
                     if(copyTime.minutes < 0) {
                         copyTime.minutes = 59;
                         copyTime.hours = String(Number(copyTime.hours) - 1).padStart(2, '0');
+                        if(copyTime.hours < 0) {
+                            copyTime.hours = '00';
+                            copyTime.minutes = '00';
+                            copyTime.seconds = '00';
+                            setIsStart(false);
+                        }
                     }
                     return copyTime;
                 })
