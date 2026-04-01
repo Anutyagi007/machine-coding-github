@@ -5,6 +5,7 @@ import OTP from './components/OTP/OTP';
 import Stepper from './components/Stepper/Stepper';
 import Pagination from './components/Pagination/Pagination';
 import Carousel from './components/Carousel/Carousel';
+import Stopwatch from './components/Stopwatch/Stopwatch';
 
 function App() {
   const components = [
@@ -32,7 +33,12 @@ function App() {
       key: 'carousel',
       name: 'Carousel Component',
       element: <Carousel/>
-    }
+    },
+    {
+      key: 'stopwatch',
+      name: 'Stopwatch Component',
+      element: <Stopwatch/>
+    },
   ];
 
   const [activeKey, setActiveKey] = useState('toast');
