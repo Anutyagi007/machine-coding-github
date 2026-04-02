@@ -6,6 +6,7 @@ import Stepper from './components/Stepper/Stepper';
 import Pagination from './components/Pagination/Pagination';
 import Carousel from './components/Carousel/Carousel';
 import Stopwatch from './components/Stopwatch/Stopwatch';
+import VirtualisedList from './components/VirtualisedList/VirtualisedList';
 
 function App() {
   const components = [
@@ -39,6 +40,11 @@ function App() {
       name: 'Stopwatch Component',
       element: <Stopwatch/>
     },
+    {
+      key: 'virtualisedList',
+      name: 'Virtualised List Component',
+      element: <VirtualisedList/>
+    }
   ];
 
   const [activeKey, setActiveKey] = useState('toast');
