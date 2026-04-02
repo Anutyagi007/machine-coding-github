@@ -1,0 +1,9 @@
+.explorer-container {
+    border-left: 1px solid black;
+    padding-left: 1rem;
+    span {
+        margin: 0.5rem;
+        cursor: pointer;
+        font-size: 14px;
+    }
+}

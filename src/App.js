@@ -7,7 +7,8 @@ import Pagination from './components/Pagination/Pagination';
 import Carousel from './components/Carousel/Carousel';
 import Stopwatch from './components/Stopwatch/Stopwatch';
 import VirtualisedList from './components/VirtualisedList/VirtualisedList';
-
+import FileExplorer from './components/FileExplorer/FileExplorer';
+import fileData from '../src/components/FileExplorer/Data.json';
 function App() {
   const components = [
     {
@@ -44,6 +45,11 @@ function App() {
       key: 'virtualisedList',
       name: 'Virtualised List Component',
       element: <VirtualisedList/>
+    },
+    {
+      key: 'fileexplorer',
+      name: 'File Explorer Component',
+      element: <FileExplorer fileData={fileData} />
     }
   ];
 
