@@ -10,6 +10,7 @@ import VirtualisedList from './components/VirtualisedList/VirtualisedList';
 import FileExplorer from './components/FileExplorer/FileExplorer';
 import fileData from '../src/components/FileExplorer/Data.json';
 import StarRating from './components/StarRating/StarRating';
+import InteractiveShape from './components/InteractiveShape/InteractiveShape';
 function App() {
   const components = [
     {
@@ -56,6 +57,11 @@ function App() {
       key: 'starrating',
       name: 'Star Rating Component',
       element: <StarRating/>
+    },
+    {
+      key: 'interactiveshape',
+      name: 'Interactive Shape Component',
+      element: <InteractiveShape/>
     }
   ];
 
