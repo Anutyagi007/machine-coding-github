@@ -9,6 +9,7 @@ import Stopwatch from './components/Stopwatch/Stopwatch';
 import VirtualisedList from './components/VirtualisedList/VirtualisedList';
 import FileExplorer from './components/FileExplorer/FileExplorer';
 import fileData from '../src/components/FileExplorer/Data.json';
+import StarRating from './components/StarRating/StarRating';
 function App() {
   const components = [
     {
@@ -50,6 +51,11 @@ function App() {
       key: 'fileexplorer',
       name: 'File Explorer Component',
       element: <FileExplorer fileData={fileData} />
+    },
+    {
+      key: 'starrating',
+      name: 'Star Rating Component',
+      element: <StarRating/>
     }
   ];
 
