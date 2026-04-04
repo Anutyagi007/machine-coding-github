@@ -6,8 +6,12 @@ export default function InteractiveShape() {
     Array.from({ length: 3 }, () => new Array(3).fill(false)),
   );
   const queue = useRef([]);
+  const timerId =useRef([]);
 
   const handleOnClick = (rowIdx, colIdx, flag) => {
+    if (timerId.current.length > 0 && flag) {
+      return;
+    }
     if (grid[rowIdx][colIdx] && flag) {
       return;
     }
@@ -21,15 +25,22 @@ export default function InteractiveShape() {
 
   useEffect(() => {
     if (queue.current.length === 9) {
+      const count = queue.current.length;
       queue.current.forEach(([rowIdx, colIdx], idx) => {
-        setTimeout(() => {
+        timerId.current[idx] = setTimeout(() => {
             handleOnClick(rowIdx, colIdx, false);
+            if (idx === count - 1) timerId.current = [];
           },1000 * (idx + 1),
         );
       });
       queue.current = [];
     }
   }, [grid]);
+  useEffect(() => {
+    return () => {
+      timerId.current.forEach((id) => clearTimeout(id));
+    };
+  }, []);
 
   return (
     <div className="container">
