@@ -1,0 +1,19 @@
+.board {
+    display: grid;
+    gap: 10px;
+}
+
+.cell-tic {
+    border: 1px solid black;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tic-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -11,6 +11,7 @@ import FileExplorer from './components/FileExplorer/FileExplorer';
 import fileData from '../src/components/FileExplorer/Data.json';
 import StarRating from './components/StarRating/StarRating';
 import InteractiveShape from './components/InteractiveShape/InteractiveShape';
+import TicTacToe from './components/TicTacToe/TicTacToe';
 function App() {
   const components = [
     {
@@ -62,6 +63,11 @@ function App() {
       key: 'interactiveshape',
       name: 'Interactive Shape Component',
       element: <InteractiveShape/>
+    },
+    {
+      key: 'tictactoe',
+      name: 'Tic Tac Toe Component',
+      element: <TicTacToe size={3} />
     }
   ];
 
