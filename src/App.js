@@ -12,6 +12,7 @@ import fileData from '../src/components/FileExplorer/Data.json';
 import StarRating from './components/StarRating/StarRating';
 import InteractiveShape from './components/InteractiveShape/InteractiveShape';
 import TicTacToe from './components/TicTacToe/TicTacToe';
+import Typeahead from './components/Typeahead/Typeahead';
 function App() {
   const components = [
     {
@@ -68,6 +69,11 @@ function App() {
       key: 'tictactoe',
       name: 'Tic Tac Toe Component',
       element: <TicTacToe size={3} />
+    },
+    {
+      key: 'typeahead',
+      name: 'Typeahead Component',
+      element: <Typeahead />
     }
   ];
 
