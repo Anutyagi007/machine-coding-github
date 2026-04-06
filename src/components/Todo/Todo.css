@@ -1,0 +1,40 @@
+.todo-input {
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.add-task {
+    height: 45px;
+    width: 100px;
+    margin: 0.5rem;
+    padding: 10px;
+    background-color: skyblue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+
+}
+
+.todo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.btn {
+    height: 30px;
+    width: 80px;
+    margin: 0.5rem;
+    background-color: skyblue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.completed {
+    text-decoration: line-through;
+}

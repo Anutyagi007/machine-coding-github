@@ -13,6 +13,7 @@ import StarRating from './components/StarRating/StarRating';
 import InteractiveShape from './components/InteractiveShape/InteractiveShape';
 import TicTacToe from './components/TicTacToe/TicTacToe';
 import Typeahead from './components/Typeahead/Typeahead';
+import Todo from './components/Todo/Todo';
 function App() {
   const components = [
     {
@@ -74,6 +75,11 @@ function App() {
       key: 'typeahead',
       name: 'Typeahead Component',
       element: <Typeahead />
+    },
+    {
+      key: 'todo',
+      name: 'Todo Component',
+      element: <Todo />
     }
   ];
 
