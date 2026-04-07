@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { memo, useCallback, useEffect, useState } from 'react'
 import './Todo.css'
 import Item from './Item';
 
-const Todo = () => {
+const Todo = memo(() => {
     const [input, setInput] = useState('');
     const [todos, setTodos] = useState(JSON.parse(localStorage.getItem('todos')) || []);
 
@@ -18,15 +18,15 @@ const Todo = () => {
             setInput('');
         }
     }
-    const handleUpdate = (id, updatedValue) => {
+    const handleUpdate = useCallback((id, updatedValue) => {
         setTodos((todo) => todo.map((t) => t.id === id ? {...t, text: updatedValue} : t));
-    }
-    const handleComplete = (id) => {
+    }, []);
+    const handleComplete = useCallback((id) => {
         setTodos((todos) => todos.map((t) => t.id === id ? {...t, isCompleted : !t.isCompleted} : t))
-    }
-    const handleDelete = (id) => {
+    }, []);
+    const handleDelete = useCallback((id) => {
         setTodos((prevTodo) => prevTodo.filter((todo) => todo.id !== id));
-    };
+    }, []);
     console.log(todos);
     useEffect(()=> {
         localStorage.setItem('todos', JSON.stringify(todos));
@@ -47,6 +47,6 @@ const Todo = () => {
         </div>
     </div>
   )
-}
+})
 
 export default Todo
