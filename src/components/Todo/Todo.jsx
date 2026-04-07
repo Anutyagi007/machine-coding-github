@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Todo.css'
+import Item from './Item';
 
 const Todo = () => {
     const [input, setInput] = useState('');
@@ -17,7 +18,12 @@ const Todo = () => {
             setInput('');
         }
     }
-
+    const handleUpdate = (id, updatedValue) => {
+        setTodos((todo) => todo.map((t) => t.id === id ? {...t, text: updatedValue} : t));
+    }
+    const handleComplete = (id) => {
+        setTodos((todos) => todos.map((t) => t.id === id ? {...t, isCompleted : !t.isCompleted} : t))
+    }
     const handleDelete = (id) => {
         setTodos((prevTodo) => prevTodo.filter((todo) => todo.id !== id));
     };
@@ -35,9 +41,7 @@ const Todo = () => {
         <div className='todos-div'>
             {
                 todos.map((todo) => {
-                    return <ul key={todo.id}>
-                        <li className={`${todo.isCompleted ? 'completed' : ''}`} onClick={()=>setTodos((todos) => todos.map((t) => t.id === todo.id ? {...t, isCompleted : true} : t))}>{todo.text}<button className='btn'>completed</button> <button className='btn' onClick={()=>handleDelete(todo.id)}>delete</button></li>  
-                    </ul>
+                    return <Item key={todo.id} todo={todo} handleComplete={handleComplete} handleDelete={handleDelete} handleUpdate={handleUpdate}/>
                 })
             }
         </div>
