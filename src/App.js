@@ -14,6 +14,7 @@ import InteractiveShape from './components/InteractiveShape/InteractiveShape';
 import TicTacToe from './components/TicTacToe/TicTacToe';
 import Typeahead from './components/Typeahead/Typeahead';
 import Todo from './components/Todo/Todo';
+import MemoryGame from './components/MemoryGame/MemoryGame';
 function App() {
   const components = [
     {
@@ -80,6 +81,11 @@ function App() {
       key: 'todo',
       name: 'Todo Component',
       element: <Todo />
+    },
+    {
+      key: 'memorygame',
+      name: 'Memory Game Component',
+      element: <MemoryGame />
     }
   ];
 
