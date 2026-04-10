@@ -15,6 +15,7 @@ import TicTacToe from './components/TicTacToe/TicTacToe';
 import Typeahead from './components/Typeahead/Typeahead';
 import Todo from './components/Todo/Todo';
 import MemoryGame from './components/MemoryGame/MemoryGame';
+import InfiniteScroll from './components/InfiniteScroll/InfiniteScroll';
 function App() {
   const components = [
     {
@@ -86,6 +87,11 @@ function App() {
       key: 'memorygame',
       name: 'Memory Game Component',
       element: <MemoryGame />
+    },
+    {
+      key: 'infinitescroll',
+      name: 'Infinite Scroll Component',
+      element: <InfiniteScroll />
     }
   ];
 
