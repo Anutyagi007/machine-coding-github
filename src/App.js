@@ -16,6 +16,8 @@ import Typeahead from './components/Typeahead/Typeahead';
 import Todo from './components/Todo/Todo';
 import MemoryGame from './components/MemoryGame/MemoryGame';
 import InfiniteScroll from './components/InfiniteScroll/InfiniteScroll';
+import ProgressBar from './components/ProgressBar/ProgressBar';
+import Accordion from './components/Accordion/Accordion';
 function App() {
   const components = [
     {
@@ -92,6 +94,16 @@ function App() {
       key: 'infinitescroll',
       name: 'Infinite Scroll Component',
       element: <InfiniteScroll />
+    },
+    {
+      key: 'progressbar',
+      name: 'Progress Bar Component',
+      element: <ProgressBar />
+    },
+    {
+      key: 'Accordion',
+      name: 'Accordion Component',
+      element: <Accordion />
     }
   ];
 
