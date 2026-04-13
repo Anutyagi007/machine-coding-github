@@ -18,6 +18,7 @@ import MemoryGame from './components/MemoryGame/MemoryGame';
 import InfiniteScroll from './components/InfiniteScroll/InfiniteScroll';
 import ProgressBar from './components/ProgressBar/ProgressBar';
 import Accordion from './components/Accordion/Accordion';
+import Tabs from './components/Tabs/Tabs';
 function App() {
   const components = [
     {
@@ -101,9 +102,14 @@ function App() {
       element: <ProgressBar />
     },
     {
-      key: 'Accordion',
+      key: 'accordion',
       name: 'Accordion Component',
       element: <Accordion />
+    },
+    {
+      key: 'tabs',
+      name: 'Tabs Component',
+      element: <Tabs />
     }
   ];
 
