@@ -1,0 +1,11 @@
+.tab-com {
+    margin: 10px;
+    padding: 10px;
+}
+.active-comp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    margin: 2rem;
+}
