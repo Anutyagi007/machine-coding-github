@@ -118,9 +118,8 @@ function App() {
   const activeComponent = components.find((item) => item.key === activeKey);
 
   return (
-    <div className="App" style={{ padding: 24 }}>
-      <h1>Machine coding round playground</h1>
-      <div style={{ display: 'flex', gap: '12px', marginBottom: 20 }}>
+    <div className="App" style={{ padding: 24, display: 'flex', justifyContent: 'space-around' }}>
+      <div style={{ display: 'flex', gap: '12px', marginBottom: 20, flexDirection: 'column' }}>
         {components.map((comp) => (
           <button
             key={comp.key}
@@ -140,6 +139,7 @@ function App() {
       </div>
 
       <div>
+        <h1>Machine coding round playground</h1>
         {activeComponent ? activeComponent.element : <p>Select a component</p>}
       </div>
     </div>
