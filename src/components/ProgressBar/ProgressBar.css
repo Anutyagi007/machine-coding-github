@@ -1,0 +1,13 @@
+
+.outer-div {
+    width: 400px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.inner-div {
+    background-color: green;
+}
