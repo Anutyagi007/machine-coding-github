@@ -19,6 +19,7 @@ import InfiniteScroll from './components/InfiniteScroll/InfiniteScroll';
 import ProgressBar from './components/ProgressBar/ProgressBar';
 import Accordion from './components/Accordion/Accordion';
 import Tabs from './components/Tabs/Tabs';
+import NestedComments from './components/NestedComments/NestedComments';
 function App() {
   const components = [
     {
@@ -110,6 +111,11 @@ function App() {
       key: 'tabs',
       name: 'Tabs Component',
       element: <Tabs />
+    },
+    {
+      key: 'nestedcomments',
+      name: 'Nested Comments Component',
+      element: <NestedComments />
     }
   ];
 
