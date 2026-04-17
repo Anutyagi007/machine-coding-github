@@ -20,6 +20,7 @@ import ProgressBar from './components/ProgressBar/ProgressBar';
 import Accordion from './components/Accordion/Accordion';
 import Tabs from './components/Tabs/Tabs';
 import NestedComments from './components/NestedComments/NestedComments';
+import TrafficLights from './components/TrafficLights/TrafficLights';
 function App() {
   const components = [
     {
@@ -116,6 +117,11 @@ function App() {
       key: 'nestedcomments',
       name: 'Nested Comments Component',
       element: <NestedComments />
+    },
+    {
+      key: 'trafficlights',
+      name: 'Traffic Lights Component',
+      element: <TrafficLights />
     }
   ];
 
