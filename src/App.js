@@ -123,6 +123,7 @@ function App() {
       name: 'Traffic Lights Component',
       element: <TrafficLights />
     }
+    
   ];
 
   const [activeKey, setActiveKey] = useState('toast');
