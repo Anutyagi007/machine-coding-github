@@ -21,6 +21,7 @@ import Accordion from './components/Accordion/Accordion';
 import Tabs from './components/Tabs/Tabs';
 import NestedComments from './components/NestedComments/NestedComments';
 import TrafficLights from './components/TrafficLights/TrafficLights';
+import Calender from './components/Calender/Calender';
 function App() {
   const components = [
     {
@@ -122,6 +123,11 @@ function App() {
       key: 'trafficlights',
       name: 'Traffic Lights Component',
       element: <TrafficLights />
+    },
+    {
+      key: 'calender',
+      name: 'Calender Component',
+      element: <Calender />
     }
   ];
 
