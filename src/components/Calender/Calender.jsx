@@ -1,8 +1,12 @@
 import React from 'react'
 
 const Calender = () => {
+  const slots = Array.from({length: 24}, (_, index) => index);
+  console.log(slots)
   return (
-    <div>Calender</div>
+    <div>
+      {slots}:00
+    </div>
   )
 }
 
