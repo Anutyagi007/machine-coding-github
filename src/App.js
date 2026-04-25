@@ -22,6 +22,7 @@ import Tabs from './components/Tabs/Tabs';
 import NestedComments from './components/NestedComments/NestedComments';
 import TrafficLights from './components/TrafficLights/TrafficLights';
 import Calender from './components/Calender/Calender';
+import Modal from './components/Modal/Modal';
 function App() {
   const components = [
     {
@@ -128,6 +129,11 @@ function App() {
       key: 'calender',
       name: 'Calender Component',
       element: <Calender />
+    },
+    {
+      key: 'modal',
+      name: 'Modal Component',
+      element: <Modal />
     }
   ];
 
