@@ -23,6 +23,7 @@ import NestedComments from './components/NestedComments/NestedComments';
 import TrafficLights from './components/TrafficLights/TrafficLights';
 import Calender from './components/Calender/Calender';
 import Modal from './components/Modal/Modal';
+import TypingEffect from './components/TypingEffect/TypingEffect';
 function App() {
   const components = [
     {
@@ -134,6 +135,11 @@ function App() {
       key: 'modal',
       name: 'Modal Component',
       element: <Modal />
+    },
+    {
+      key: 'typingeffect',
+      name: 'Typing Effect Component',
+      element: <TypingEffect />
     }
   ];
 
