@@ -24,6 +24,7 @@ import TrafficLights from './components/TrafficLights/TrafficLights';
 import Calender from './components/Calender/Calender';
 import Modal from './components/Modal/Modal';
 import TypingEffect from './components/TypingEffect/TypingEffect';
+import DragDrop from './components/DragDrop/DragDrop';
 function App() {
   const components = [
     {
@@ -140,6 +141,11 @@ function App() {
       key: 'typingeffect',
       name: 'Typing Effect Component',
       element: <TypingEffect />
+    },
+    {
+      key: 'dragdrop',
+      name: 'Drag Drop Component',
+      element: <DragDrop />
     }
   ];
 
