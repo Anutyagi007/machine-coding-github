@@ -25,6 +25,7 @@ import Calender from './components/Calender/Calender';
 import Modal from './components/Modal/Modal';
 import TypingEffect from './components/TypingEffect/TypingEffect';
 import DragDrop from './components/DragDrop/DragDrop';
+import FileUploader from './components/FileUploader/FileUploader';
 function App() {
   const components = [
     {
@@ -146,6 +147,11 @@ function App() {
       key: 'dragdrop',
       name: 'Drag Drop Component',
       element: <DragDrop />
+    },
+    {
+      key: 'fileuploader',
+      name: 'File Uploader Component',
+      element: <FileUploader />
     }
   ];
 
