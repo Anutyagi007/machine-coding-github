@@ -26,6 +26,7 @@ import Modal from './components/Modal/Modal';
 import TypingEffect from './components/TypingEffect/TypingEffect';
 import DragDrop from './components/DragDrop/DragDrop';
 import FileUploader from './components/FileUploader/FileUploader';
+import InstagramStory from './components/InstagramStory/InstagramStory';
 function App() {
   const components = [
     {
@@ -152,6 +153,11 @@ function App() {
       key: 'fileuploader',
       name: 'File Uploader Component',
       element: <FileUploader />
+    },
+    {
+      key: 'instagramstory',
+      name: 'Instagram Story Component',
+      element: <InstagramStory />
     }
   ];
 
