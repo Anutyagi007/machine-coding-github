@@ -3,6 +3,7 @@ import './InstagramStory.css';
 
 const InstagramStory = () => {
     const [stories, setStories] = useState([]);
+    const [showModal, setShowModal] = useState(null);
     const handleChange = (e) => {
         console.log(e.target.files);
         setTimeout(() => {
@@ -18,7 +19,16 @@ const InstagramStory = () => {
 
     }
     console.log(stories);
+    const handleClick = (story) => {
+        setShowModal(URL.createObjectURL(story));
+        setTimeout(() => {
+            setShowModal(null);
+
+        }, 3000)
+    }
   return (
+    <>
+    <Modal imageSrc = {showModal} />
     <div className="story-container">
         <div className="add-story story-item">
             <input type="file" multiple hidden id="add-story-input" onChange={handleChange}/>
@@ -27,14 +37,19 @@ const InstagramStory = () => {
         <div className = "stories-container">
             {
                 stories.map((story, index) => {
-                    return <div key={index} className="story-item">
+                    return <div key={index} className="story-item" onClick={() => handleClick(story)}>
                         <img src = {URL.createObjectURL(story)} alt={story.name} />
                     </div>
                 })
             }
         </div>
     </div>
+    </>
   )
+}
+
+const Modal =({imageSrc}) => {
+    return <img src={imageSrc} alt="story" className="modal"/>
 }
 
 export default InstagramStory
